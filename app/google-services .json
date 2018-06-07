@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "459936091330",
+    "firebase_url": "https://bikesharing-935b7.firebaseio.com",
+    "project_id": "bikesharing-935b7",
+    "storage_bucket": "bikesharing-935b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459936091330:android:f1d172184057f33e",
+        "android_client_info": {
+          "package_name": "com.activity.nardin.sharingbike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459936091330-uviofg4ho3ac8rlfbvj0mkhmu9mgm5tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.activity.nardin.sharingbike",
+            "certificate_hash": "8b883119f495f539e2ecb4ea0e4b9b8a50c3d008"
+          }
+        },
+        {
+          "client_id": "459936091330-s1cr0apugrbju6mdg53j8f1psfnlmqmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwCQH3pQ-RAJECSQwiNtROGrbF2Z820Pk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459936091330-s1cr0apugrbju6mdg53j8f1psfnlmqmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
