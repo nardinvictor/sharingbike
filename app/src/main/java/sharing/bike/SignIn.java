@@ -1,11 +1,16 @@
 package sharing.bike;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.activity.nardin.sharingbike.MapsActivity;
 import com.activity.nardin.sharingbike.R;
@@ -15,7 +20,6 @@ import com.activity.nardin.sharingbike.R;
 //import com.google.firebase.database.DatabaseReference;
 //import com.google.firebase.database.FirebaseDatabase;
 //import com.google.firebase.database.ValueEventListener;
-
 
 public class SignIn extends AppCompatActivity {
 
@@ -29,6 +33,7 @@ public class SignIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+
         editPassword = (EditText)findViewById(R.id.editText2);
 
         editPhone = (EditText)findViewById(R.id.editText);
@@ -72,16 +77,30 @@ public class SignIn extends AppCompatActivity {
         //});
         login1.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View w ){
-                Intent sss = new Intent(SignIn.this, MapsActivity.class);
-                startActivity(sss);
+            public void onClick(View w ) {
+
+                try {
+                    String str = editPhone.getText().toString();
+                    String st1 = editPassword.getText().toString();
+                    if (str.equals("01234567890") && st1.equals("Nardin")) {
+                        Intent sss = new Intent(SignIn.this, MapsActivity.class);
+                        startActivity(sss);
+                    } else {
+
+                        Toast.makeText(getApplicationContext(), "There is incorrect information!", Toast.LENGTH_LONG).show();
+                    }
+                } catch (Exception ex) {
+
+                }
             }
+
         });
 
 
     }
-
     }
+
+
 
 
 
